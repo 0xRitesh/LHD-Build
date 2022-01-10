@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "emoji",
+  "description": "Explore emojis, with one click copy",
+
+  "version": "1.0.0",
+
+  "browser_action": {
+    "default_icon": "assets/favicon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "",
+    "32": "",
+    "128": ""
+  },
+
+  "permissions": ["activeTab"]
+}

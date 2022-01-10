@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 0.3rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.searchEmoji {
+  padding: 0.5rem;
+  width: 18rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  text-align: center;
+  outline: 0;
+}
+
+.emojiContainer {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  height: 20rem;
+  width: 18rem;
+  overflow-y: auto;
+  border-radius: 12px;
+}
+
+.loading {
+  text-align: center;
+}
+
+.loading img {
+  height: 6rem;
+  width: 6rem;
+  visibility: hidden;
+}
+
+.active img {
+  visibility: visible;
+}
+
+.copyEmoji {
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.copyEmoji::selection,
+.copyEmoji::-moz-selection {
+  background-color: #fff;
+  color: #fff;
+}
+
+input {
+  height: 2rem;
+  width: 2rem;
+}
+
+li {
+  list-style: none;
+  margin: 0 0.3rem;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  color: royalblue;
+}
+
+footer {
+  margin: 0.5rem 0;
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+.emojiContainer::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.emojiContainer::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 12px;
+}
