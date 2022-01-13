@@ -1,4 +1,3 @@
-
 class bcolors:
     OKCYAN = '\033[96m'
     OKGREEN = '\033[92m'
@@ -8,8 +7,7 @@ class bcolors:
 
 def encrypt(text,s):
     result = ""
- 
-    # traverse text
+
     for i in range(len(text)):
         char = text[i]
         if (char.isupper()):
